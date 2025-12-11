@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Vinyl Player - Deca Joins</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- 开场介绍屏幕 -->
+    <div id="intro-container">
+        <!-- 第一屏：乐队介绍 -->
+        <div class="intro-screen active" id="screen1">
+            <h1>Deca Joins</h1>
+            <p>Deca Joins (stylized as deca joins) is a Taiwanese indie rock band that formed in 2013 in Taipei.</p>
+            <p class="click-hint">Click to continue</p>
+        </div>
+
+        <!-- 第二屏：成员介绍 -->
+        <div class="intro-screen" id="screen2">
+            <p class="intro-text">The band currently consists of four members:</p>
+            <ul>
+                <li>Zheng Jingru - vocals, guitar</li>
+                <li>Yang Shanghua - guitar</li>
+                <li>Xie Junyan - bass</li>
+                <li>Chen Huanggu - drums</li>
+            </ul>
+            <p class="intro-text">Their music has been described by critics as "indie," "grunge," and "lo-fi."</p>
+            <p class="click-hint">Click to continue</p>
+        </div>
+
+        <!-- 第三屏：戴耳机提示 -->
+        <div class="intro-screen" id="screen3">
+            <div class="headphone-emoji">🎧</div>
+            <h2>Put on your headphones</h2>
+            <p class="intro-text">For the best experience</p>
+            <p class="click-hint">Click to enter</p>
+        </div>
+    </div>
+
+    <!-- Three.js 场景容器 -->
+    <div id="scene-container"></div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
